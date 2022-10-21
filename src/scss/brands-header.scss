@@ -1,0 +1,9 @@
+.brands-header {
+	background: linear-gradient(270deg, #F8F8F8 0%, #ffffff 98.61%);
+}
+
+@media (min-width: 768px) {
+    .brands-header {
+		background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+	}
+}
