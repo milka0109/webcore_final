@@ -1,0 +1,40 @@
+.side-menu {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    z-index: 2;
+    transition: all 1s;
+    max-height: 1024px;
+    position: fixed;
+}
+
+.side-menu--hidden {
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+
+.side-menu--visible {
+    transition: all 1s;
+    transform: translateX(0);
+}
+
+@media screen and (min-width: 768px) {
+    .side-menu--visible {
+        box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
+    }
+
+    .main--blurred {
+        filter: blur(4px);
+        transition: 1s;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .side-menu--desktop--visible {
+        transform: translateX(0);
+        box-shadow: none;
+    }
+}

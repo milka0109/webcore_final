@@ -1,32 +1,32 @@
 import Swiper, { Pagination } from 'swiper';
 
-//Инициализация свайпера
-let swiper;
+const slider = document.querySelector('.swiper');
 let init = false;
+let sliderBrands;
 
-function initSwiper() {
-	if (window.innerWidth < 768) {
-		if (!init) {
-			init = true;
-			swiper = new Swiper('.swiper', {
-				modules: [Pagination],
-				direction: 'horizontal',
-				effect: 'slide',
-				slidesPerView: 'auto',
-				centeredSlides: true,
+function createSliderBrands () {
+    if (window.innerWidth < 768) {
+        if (!init) {
+            init = true;
+            sliderBrands = new Swiper(slider, {
+                modules: [ Pagination ],
+                effect: 'slide',
+                slidesPerView: 'auto',
+                centeredSlides: true,
 				centeredSlidesBounds: true,
-				spaceBetween: 16,
-				pagination: {
-					el: '.swiper-pagination',
-					clickable: true,
-				},
-			});
-		}
-	} else if (init) {
-		swiper.destroy();
-		init = false;
-	}
+                spaceBetween: 16,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true,
+                },
+            });
+        }
+    } else if (init) {
+        sliderBrands.destroy();
+        init = false;
+    }
 }
 
-initSwiper();
-window.addEventListener("resize", initSwiper);
+createSliderBrands();
+window.addEventListener('resize', createSliderBrands);

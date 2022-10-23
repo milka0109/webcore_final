@@ -1,15 +1,11 @@
 .button {
-    padding: 0;
     width: 40px;
     height: 40px;
     background-color: #FF3E79;
-    border-radius: 50%;
-    border: 0px #FF3E79;
+    border: #FF3E79;
+    border-radius: 20px;
     justify-content: center;
-}
-
-.button__icon {
-    justify-content: center;
+    align-items: center;
 }
 
 .button:hover {
@@ -23,4 +19,3 @@
     opacity: 1;
     background-color: #FF3E79;
 }
-

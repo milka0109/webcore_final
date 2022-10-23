@@ -1,0 +1,38 @@
+.side-header {
+    height: 116px;
+    width: 100vw;
+}
+
+.side-header__logo{
+    width: 98px;
+    margin-right: 58px;
+}
+
+@media screen and (min-width: 768px) {
+    .side-header{
+        width: 320px;
+    }
+}
+
+.side-header__button-close {
+    background: url("../img/close.png") center center no-repeat;
+    margin-right: 16px;
+}
+
+.side-header__button-search {
+    background: url("../img/search.png") center center no-repeat;
+}
+
+.side-header__list {
+    margin-top: 19px;
+}
+
+.side-header__item:last-of-type {
+    margin-left: auto;
+}
+
+@media screen and (min-width: 1440px) {
+    .side-header__button-close {
+        display: none;
+    }
+}

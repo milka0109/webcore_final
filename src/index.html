@@ -1,182 +1,255 @@
-<!DOCTYPE html>
-<html class="html" lang="ru">
+<!doctype html>
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Услуги и сервисы</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CPS</title>
 </head>
 
 <body class="body">
-    <header class="nav">
-        <button type="button" class="button nav__button burger-button"><img class="button__icon" src="./img/burger.svg" alt="menu"></button>
-        <div class="nav__divider nav__divider--768"></div>
-        <button type="button" class="logo nav__logo"><img src="./img/group.svg" alt="logo"></button>
-        <button type="button" class="button nav__button nav__button--768"><img class="button__icon"  src="./img/call.svg" alt="call"></button>
-        <button type="button" class="button nav__button nav__button--768"><img class="button__icon"  src="./img/chat.svg" alt="chat"></button>
-        <button type="button" class="button nav__button nav__button--768"><img class="button__icon"  src="./img/profile.svg" alt="profile"></button>
-        <div class="nav__divider"></div>
-        <button type="button" class="button nav__button"><img class="button__icon"  src="./img/repair.svg" alt="repair"></button>
-        <button type="button" class="button nav__button"><img class="button__icon"  src="./img/checkstatus.svg" alt="check"></button>
-    </header>
-    
-    <main class="main">
-        <div class="head">
-            <h1 class="head__title">Услуги и сервисы</h1>
-            <div class="head-1120"> 
-                 <a class="head-1120__link" href="#">Оставить заявку</a>
-                 <button type="button" class="button head-1120__buttton" ><img src="./img/repair.svg" alt="repair"></button>
-                 <a class="head-1120__link" href="#">Статус ремонта</a>
-                 <button type="button" class="button head-1120__buttton"><img src="./img/checkstatus.svg" alt="check"></button>
+
+    <aside class='side-menu side-menu--hidden side-menu--desktop--visible'>
+        <div class="side-header">
+            <div class="side-container">
+                <ul class="list side-header__list">
+                    <li class="side-header__item">
+                        <button class='button side-header__button-close'></button>
+                    </li>
+                    <li class="side-header__item">
+                        <a href="#" class="logo">
+                            <img src="img/logo.png" alt="Логотип" class="side-header__logo">
+                        </a>
+                    </li>
+                    <li class="side-header__item">
+                        <button class='button side-header__button-search'></button>
+                    </li>
+                </ul>
             </div>
         </div>
 
-        <ul class="menu menu--scroll--hidden">
-            <li class="menu__item menu__item--current"><a class="menu_link" href="#">Ремонтируемые устройства</a></li>
-            <li class="menu__item"><a class="menu_link" href="#">Дополнительные услуги</a></li>
-            <li class="menu__item"><a class="menu_link" href="#">Цены на услуги</a></li>
-            <li class="menu__item"><a class="menu_link" href="#">Специальные цены</a></li>
-            <li class="menu__item"><a class="menu_link" href="#">Адреса сервисных центров</a></li>
-            <li class="menu__item"><a class="menu_link" href="#">Отзывы</a></li>
-        </ul>
+        <div class='side-body'>
+            <div class="side-container">
+                <ul class="list side-body__list">
+                    <li class="side-body__item">
+                        <a href="#" class="text-link side-body__link">Ремонт техники</a>
+                    </li>
+                    <li class="side-body__item">
+                        <a href="#" class="text-link side-body__link">Услуги и сервисы</a>
+                    </li>
+                    <li class="side-body__item">
+                        <a href="#" class="text-link side-body__link">Корпоративным клиентам</a>
+                    </li>
+                    <li class="side-body__item">
+                        <a href="#" class="text-link side-body__link">Продавцам техники</a>
+                    </li>
+                    <li class="side-body__item">
+                        <a href="#" class="text-link side-body__link">Партнерам</a>
+                    </li>
+                    <li class="side-body__item">
+                        <a href="#" class="text-link side-body__link">Производителям</a>
+                    </li>
+                    <li class="side-body__item">
+                        <a href="#" class="text-link side-body__link">Наши сервисные центры</a>
+                    </li>
+                    <li class="side-body__item">
+                        <a href="#" class="text-link side-body__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-        <div class="content">
-            <div class="text">
-                <p class="paragraph text__paragraph"> 
-                     <span class="paragraph__item">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br></span>
-                     <span class="paragraph__item paragraph__item--768">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</span>
-                     <span class="paragraph__item paragraph__item--1120">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
-                </p>
-                <div class="expand">
-                     <img class="expand__icon" src="./img/expand.svg" alt="">
-                     <span class="expand__text"><a class="expand__link" href="#">Читать далее</a></span>
+        <div class="side-footer">
+            <div class="side-container">
+                <ul class="list side-footer__list">
+                    <li class="side-footer__item">
+                        <button class='button side-footer__button-call'></button>
+                    </li>
+                    <li class="side-footer__item">
+                        <button class='button side-footer__button-message'></button>
+                    </li>
+                    <li class="side-footer__item">
+                        <button class='button side-footer__button-contacts'></button>
+                    </li>
+                </ul>
+                <div class="side-footer__contacts">
+                    <a href="mailto:mail@cps.com" class="text-link footer__email">mail@cps.com</a>
+                    <a href="tel:+78008908900" class="text-link footer__phone">8 800 890 8900</a>
                 </div>
-            </div>
-            <img class="image" src="./img/main_img.png" alt="CPS">
-        </div>
-
-        <div class="brands-body">
-            <div class="swiper-container">
-                <div class="brands-header">
-                    <h1 class="brands-title">ремонт техники различных брендов</h1>
+                <div class="side-footer__lang">
+                    <a href="#" class="text-link side-footer_ru">RU</a>
+                    <a href="#" class="text-link side-footer__en">EN</a>
+                    <a href="#" class="text-link side-footer__ch">CH</a>
                 </div>
-                <div class="brands-main">
-                    <div class="swiper">
-                        <ul class="brands-list swiper-wrapper">
-                            <li class="brands-list__item swiper-slide">
-                                <a href="#" class="brands-list__link brand-card">
-                                    <img src="./img/brands/lenovo.png" alt="Lenovo">
-                                    <div class="brand-card__main brand-card__arrow"></div>
-                                </a>
-                            </li>
-                            <li class="brands-list__item swiper-slide">
-                                <a href="#" class="brands-list__link brand-card">
-                                    <img src="./img/brands/samsung.png" alt="Samsung">
-                                    <div class="brand-card__main brand-card__arrow"></div>
-                                </a>
-                            </li>
-                            <li class="brands-list__item swiper-slide">
-                                <a href="#" class="brands-list__link brand-card">
-                                    <img src="./img/brands/apple.png" alt="Apple">
-                                    <div class="brand-card__main brand-card__arrow"></div>
-                                </a>
-                            </li>
-                            <li class="brands-list__item swiper-slide">
-                                <a href="#" class="brands-list__link brand-card">
-                                    <img src="./img/brands/bosch.png" alt="Bosch">
-                                    <div class="brand-card__main brand-card__arrow"></div>
-                                </a>
-                            </li>
-                            <li class="brands-list__item swiper-slide">
-                                <a href="#" class="brands-list__link brand-card">
-                                    <img src="./img/brands/hp.png" alt="HP">
-                                    <div class="brand-card__main brand-card__arrow"></div>
-                                </a>
-                            </li>
-                            <li class="brands-list__item swiper-slide">
-                                <a href="#" class="brands-list__link brand-card">
-                                    <img src="./img/brands/acer.png" alt="Acer">
-                                    <div class="brand-card__main brand-card__arrow"></div>
-                                </a>
-                            </li>
-                            <li class="brands-list__item swiper-slide">
-                                <a href="#" class="brands-list__link brand-card">
-                                    <img src="./img/brands/viewsonic.png" alt="ViewSonic">
-                                    <div class="brand-card__main brand-card__arrow"></div>
-                                </a>
-                            </li>
-                            <li class="brands-list__item swiper-slide">
-                                <a href="#" class="brands-list__link brand-card">
-                                    <img src="./img/brands/sony.png" alt="Sony">
-                                    <div class="brand-card__main brand-card__arrow"></div>
-                                </a>
-                            </li>
-                            <li class="brands-list__item swiper-slide">
-                                <a href="#" class="brands-list__link brand-card">
-                                    <img src="./img/brands/lenovo.png" alt="Lenovo">
-                                    <div class="brand-card__main brand-card__arrow"></div>
-                                </a>
-                            </li>
-                            <li class="brands-list__item swiper-slide">
-                                <a href="#" class="brands-list__link brand-card">
-                                    <img src="./img/brands/samsung.png" alt="Samsung">
-                                    <div class="brand-card__main brand-card__arrow"></div>
-                                </a>
-                            </li>
-                            <li class="brands-list__item swiper-slide">
-                                <a href="#" class="brands-list__link brand-card">
-                                    <img src="./img/brands/apple.png" alt="Apple">
-                                    <div class="brand-card__main brand-card__arrow"></div>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="swiper-pagination"></div>
-                        <button class="expand-button brand-card button-container" type="button">
-                            Показать все
-                        </button>
-                       </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <aside class="menu-block menu-block--hidden">
-        <div class="menu-header">
-            <button type="button" class="button menu-header__button close-button"><img class="button__icon" src="./img/close.svg" alt="close"></button>
-            <button type="button" class="logo menu-header__logo"><img src="./img/group.svg" alt="logo"></button>
-            <button type="button" class="button menu-header__button"><img  class="button__icon" src="./img/checkstatus.svg" alt="check"></button>
-        </div>
-        <div class="menu-main">
-            <ul class="nav-list">
-                <li><a class="nav-list__item nav-list__item--current" href="#">Ремонт техники</a></li>
-                <li><a class="nav-list__item" href="#">Услуги и сервисы</a></li>
-                <li><a class="nav-list__item" href="#">Корпоративным клиентам</a></li>
-                <li><a class="nav-list__item" href="#">Продавцам техники</a></li>
-                <li><a class="nav-list__item" href="#">Партнерам</a></li>
-                <li><a class="nav-list__item" href="#">Производителям</a></li>
-                <li><a class="nav-list__item" href="#">Наши сервисные центры</a></li>
-                <li><a class="nav-list__item" href="#">Контакты</a></li>
-            </ul>
-        </div>
-        <div class="menu-footer">
-            <div class="menu-footer-buttons">
-                <button type="button" class="button menu-footer-buttons__button"><img class="button__icon" src="./img/call.svg" alt="call"></button>
-                <button type="button" class="button menu-footer-buttons__button"><img class="button__icon" src="./img/chat.svg" alt="chat"></button>
-                <button type="button" class="button menu-footer-buttons__button"><img class="button__icon" src="./img/profile.svg" alt="profile"></button>
-            </div>
-            <a class="mail" href="#">
-                mail@cps.com
-            </a>
-            <a class="phone" href="#">
-                8 800 890 8900
-            </a>
-            <div class="languages">
-                <a class="languages__item languages__item--current" href="#">RU</a>
-                <a class="languages__item" href="#">EN</a>
-                <a class="languages__item" href="#">CH</a>
             </div>
         </div>
     </aside>
+    
+    <main class="main">
+        <header class="header">
+                <div class="container">
+                    <nav class="nav-bar">
+                        <ul class="list nav-bar__list">
+                            <li class="nav-bar__item nav-bar__menu nav-bar__item--desktop--hidden">
+                                <button class='button nav-bar__button-menu'></button>
+                            </li>
+                            <li class="nav-bar__item nav-bar__logo nav-bar__item--desktop--hidden">
+                                <a href="#" class="nav-bar__link">
+                                    <img src="img/logo.png" alt="Логотип" class="nav-bar__icon">
+                                </a>
+                            </li>
+                            <li class="nav-bar__item nav-bar__call nav-bar--tablet--visible">
+                                <button class='button nav-bar__button-call'></button>
+                            </li>
+                            <li class="nav-bar__item nav-bar__message nav-bar--tablet--visible">
+                                <button class='button nav-bar__button-message'></button>
+                            </li>
+                            <li class="nav-bar__item nav-bar__contacts nav-bar--tablet--visible">
+                                <button class='button nav-bar__button-contacts'></button>
+                            </li>
+                            <li class="nav-bar__item nav-bar__request">
+                                <div class="nav-bar__item--1440">
+                                    <div class="nav-bar-description nav-bar__description--hidden">Оставить заявку</div>
+                                    <button class='button nav-bar__button-request'></button>
+                                </div>
+                            </li>
+                            <li class="nav-bar__item nav-bar__repair-status">
+                                <div class="nav-bar__item--1440">
+                                    <div class="nav-bar-description nav-bar__description--hidden">Статус ремонта</div>
+                                    <button class='button nav-bar__button-repair-status'></button>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+        </header>
+
+        <section class='about'>
+            <div class="container">
+                <section class="head">
+                    <h1 class='about__header'>Услуги и сервисы</h1>
+                    
+                    <ul class='list about__list list--scrollbar--hidden'>
+                        <li class='about__items'>
+                            <a href="#" class='about__link'>Ремонтируемые бренды</a>
+                        </li>
+                        <li class='about__items'>
+                            <a href="#" class='about__link'>Ремонтируемые устройства</a>
+                        </li>
+                        <li class='about__items'>
+                            <a href="#" class='about__link'>Дополнительные устройства</a>
+                        </li>
+                        <li class='about__items'>
+                            <a href="#" class='about__link'>Адреса сервисных центров</a>
+                        </li>
+                        <li class='about__items'>
+                            <a href="#" class='about__link'>Специальные цены</a>
+                        </li>
+                        <li class='about__items'>
+                            <a href="#" class='about__link'>Отзывы</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="content">
+                    <div class="text">
+                        <div class="text__container text--overflow--hidden">
+                            <p class="text__paragraph ">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                            <br>
+                            <p class="text__paragraph">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget neque semper, faucibus nulla non, pretium nibh. Donec ullamcorper leo ac est bibendum, vitae gravida ex eleifend. Sed luctus ex eu dolor euismod, ac maximus tellus sollicitudin. Pellentesque tempor mollis lorem, eu euismod risus hendrerit vel. Sed venenatis turpis quis quam maximus ullamcorper.
+                            </p>
+                        </div>
+                        <button class="read-more-btn">Читать далее</button>
+                    </div>
+
+                    <img src="img/signboard.jpg" alt="Вывеска" class='about__img'>
+                </section>
+            </div>
+        </section>
+
+        <section class="repair-brands">
+            <h2 class='services-title repair-brands__title'>Ремонт техники различных брендов</h2>
+
+            <div class='swiper repair-brands__container repair-brands--overflow--hidden'>
+                <ul class="swiper-wrapper repair-brands__list">
+                    <li class="swiper-slide repair-brands__item">
+                        <button class='repair-brands__button '>
+                            <img src="img/lenovo.png" alt="Lenovo" class='repair-brands__icon repair-brands__lenovo'>
+                        </button>
+                    </li>
+                    <li class="swiper-slide repair-brands__item">
+                        <button class='repair-brands__button '>
+                            <img src="img/samsung.png" alt="Samsung" class='repair-brands__icon repair-brands__samsung'>
+                        </button>
+                    </li>
+                    <li class="swiper-slide repair-brands__item">
+                        <button class='repair-brands__button '>
+                            <img src="img/apple.png" alt="Apple" class='repair-brands__icon repair-brands__apple'>
+                        </button>
+                    </li>
+                    <li class="swiper-slide repair-brands__item">
+                        <button class='repair-brands__button '>
+                            <img src="img/viewSonic.png" alt="ViewSonic" class='repair-brands__icon repair-brands__viewSonic'>
+                        </button>
+                    </li>
+                    <li class="swiper-slide repair-brands__item">
+                        <button class='repair-brands__button '>
+                            <img src="img/bosch.png" alt="Bosch" class='repair-brands__icon repair-brands__bosch'>
+                        </button>
+                    </li>
+                    <li class="swiper-slide repair-brands__item">
+                        <button class='repair-brands__button '>
+                            <img src="img/hp.png" alt="HP" class='repair-brands__icon repair-brands__hp'>
+                        </button>
+                    </li>
+                    <li class="swiper-slide repair-brands__item">
+                        <button class='repair-brands__button '>
+                            <img src="img/acer.png" alt="Acer" class='repair-brands__icon repair-brands__acer'>
+                        </button>
+                    </li>
+                    <li class="swiper-slide repair-brands__item">
+                        <button class='repair-brands__button '>
+                            <img src="img/sony.png" alt="Sony" class='repair-brands__icon repair-brands__sony'>
+                        </button>
+                    </li>
+                    <li class="swiper-slide repair-brands__item">
+                        <button class='repair-brands__button '>
+                            <img src="img/lenovo.png" alt="Lenovo" class='repair-brands__icon repair-brands__lenovo'>
+                        </button>
+                    </li>
+                    <li class="swiper-slide repair-brands__item">
+                        <button class='repair-brands__button '>
+                            <img src="img/samsung.png" alt="Samsung" class='repair-brands__icon repair-brands__samsung'>
+                        </button>
+                    </li>
+                    <li class="swiper-slide repair-brands__item">
+                        <button class='repair-brands__button '>
+                            <img src="img/apple.png" alt="Apple" class='repair-brands__icon repair-brands__apple'>
+                        </button>
+                    </li>
+                </ul>
+                
+                <div class="swiper-pagination"></div>
+            </div>
+            <button class='show-more-btn'>Показать все</button>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__rights">
+                <p>© 2019 CPS<br> Разработано командой Apesong</p>
+            </div>
+
+            <div class="footer__policy">
+                <p>Политика конфиденциальности</p>
+            </div>
+
+            <div class="footer__info">
+                <p>Информация, размещенная на данной странице, не является публичной офертой</p>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>

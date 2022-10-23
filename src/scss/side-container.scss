@@ -1,0 +1,11 @@
+.side-container {
+    margin-right: auto;
+    width: 100vw;
+    padding: 0 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .side-container{
+        width: 320px;
+    }
+}

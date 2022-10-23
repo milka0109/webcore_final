@@ -1,0 +1,120 @@
+.swiper-slide:last-child {
+    margin-right: 16px;
+}
+
+.swiper-slide__button {
+    position: relative;
+    width: 240px;
+    height: 72px;
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.swiper-slide__button::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #FF3E79;
+    border-radius: 50%;
+    top: 13px;
+    right: 16px;
+}
+
+.swiper-slide__button::after {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-right: 2px solid #FF3E79;
+    border-bottom: 2px solid #FF3E79;
+    transform: rotate(-45deg);
+    top: 30px;
+    right: 34px;
+}
+
+.swiper-slide__button:focus {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+
+.swiper-slide__button:hover {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+
+.swiper-slide__icon {
+    position: absolute;
+    left: 16px;
+    top: 0;
+}
+
+/*Brands*/
+.swiper-slide__lenovo {
+    top: 21px;
+}
+
+.swiper-slide__samsung {
+    top: 18px;
+}
+
+.swiper-slide__apple {
+    top: 12px;
+}
+
+.swiper-slide__viewSonic {
+    top: 25px;
+}
+
+.swiper-slide__bosch {
+    top: 22px;
+}
+
+.swiper-slide__hp {
+    top: 10px;
+}
+
+.swiper-slide__acer {
+    top: 25px;
+}
+
+.swiper-slide__sony {
+    top: 23px;
+}
+
+.swiper-pagination {
+    transform: translate(-5px, 15px);
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #B5B6BC;
+}
+
+@media screen and (min-width: 768px) {
+    .swiper-slide {
+        width: 224px;
+        height: 72px;
+    }
+    .swiper-slide__button {
+        width: 224px;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .swiper-slide {
+        width: 240px;
+    }
+    .swiper-slide__button {
+        width: 240px;
+    }
+}
