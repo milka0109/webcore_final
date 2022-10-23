@@ -237,6 +237,111 @@
             <button class='show-more-btn'>Показать все</button>
         </section>
 
+        <section class='repair-techs'>
+            <h2 class='services-title repair-techs__title'>Ремонт различных видов техники</h2>
+
+            <div class='container repair-techs__container'>
+                <div class='swiper repair-techs__body repair-techs--overflow--hidden'>
+                    <ul class="swiper-wrapper repair-techs__list">
+                        <li class="swiper-slide repair-techs__item">
+                            <button class='repair-techs__button'>Ремонт ноутбуков</button>
+                        </li>
+                        <li class="swiper-slide repair-techs__item">
+                            <button class='repair-techs__button'>Ремонт планшетов</button>
+                        </li>
+                        <li class="swiper-slide repair-techs__item">
+                            <button class='repair-techs__button'>Ремонт ПК</button>
+                        </li>
+                        <li class="swiper-slide repair-techs__item">
+                            <button class='repair-techs__button'>Ремонт ПК</button>
+                        </li>
+                        <li class="swiper-slide repair-techs__item">
+                            <button class='repair-techs__button'>Ремонт ноутбуков</button>
+                        </li>
+                        <li class="swiper-slide repair-techs__item">
+                            <button class='repair-techs__button'>Ремонт планшетов</button>
+                        </li>
+                        <li class="swiper-slide repair-techs__item">
+                            <button class='repair-techs__button'>Ремонт ПК</button>
+                        </li>
+                        <!-- <li class="swiper-slide repair-techs__item">
+                            <button class='repair-techs__button'>Ремонт ПК</button>
+                        </li> -->
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <button class='show-more-btn'>Показать все</button>
+            </div>
+        </section>
+
+        <section class='price'>
+            <h2 class='services-title price-title'>цены на услуги</h2>
+
+            <div class='container price__container'>
+                <div class="swiper swiper--overflow--hidden price__body">
+
+                    <ul class="swiper-wrapper price__list">
+                        <li class='swiper-slide price__item price__item--mobile--hidden'>
+                            <div class='price__box price__headers'>
+                                <span class='price__content price__headers-position'>Ремонтные услуги</span>
+                                <span class='price__content price__headers-money'>Цена</span>
+                                <span class='price__content price__headers-time'>Срок</span>
+                            </div>
+                        </li>
+                        <li class="swiper-slide price__item">
+                            <div class='price__box'>
+                                <span class='price__text price__position'>Диагностика</span>
+                                <span class='price__text price__money'>Бесплатно</span>
+                                <span class='price__text price__time'>30 мин</span>
+                                <button class='price__button'>Заказать</button>
+                            </div>
+                        </li>
+                        <li class="swiper-slide price__item">
+                            <div class='price__box'>
+                                <span class='price__text price__position'>Замена дисплея</span>
+                                <span class='price__text price__money'>1 000 &#x20BD</span>
+                                <span class='price__text price__time'>30-120 мин</span>
+                                <button class='price__button'>Заказать</button>
+                            </div>
+                        </li>
+                        <li class="swiper-slide price__item">
+                            <div class='price__box'>
+                                <span class='price__text price__position'>Замена полифонического динамика</span>
+                                <span class='price__text price__money'>1 000 &#x20BD</span>
+                                <span class='price__text price__time'>30-120 мин</span>
+                                <button class='price__button'>Заказать</button>
+                            </div>
+                        </li>
+                        <li class="swiper-slide price__item">
+                            <div class='price__box'>
+                                <span class='price__text price__position'>Тестирование с выдачей технического заключения</span>
+                                <span class='price__text price__money'>1 000 &#x20BD</span>
+                                <span class='price__text price__time'>30-120 мин</span>
+                                <button class='price__button'>Заказать</button>
+                            </div>
+                        </li>
+                        <li class="swiper-slide price__item">
+                            <div class='price__box'>
+                                <span class='price__text price__position'>Замена программного обеспечения</span>
+                                <span class='price__text price__money'>1 000 &#x20BD</span>
+                                <span class='price__text price__time'>30-120 мин</span>
+                                <button class='price__button'>Заказать</button>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class='price__text-request'>
+                    Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
+                    <br>
+                    <a href='#' class='price__link'>Получить коммерческое предложение</a>
+                </div>
+
+            </div>
+        </section> 
+
         <footer class="footer">
             <div class="footer__rights">
                 <p>© 2019 CPS<br> Разработано командой Apesong</p>
@@ -251,5 +356,54 @@
             </div>
         </footer>
     </main>
+
+    <aside class='feedback-request feedback-request--message feedback-request--message--hidden'>
+        <header class='feedback-request__header'>
+            <button class='button feedback-request__button-close'></button>
+        </header>
+        <section class='feedback-request__body'>
+            <h2 class='feedback-request__title'>Обратная связь</h2>
+            <form action='#' method='post' class='feedback-request__form'>
+                <label for='user-name'>
+                    <input type='text' id='user-name' class='feedback-request__input' placeholder="Имя" value='' required>
+                </label>
+                <br>
+                <label for='user-phone'>
+                    <input type='tel' id='user-phone' class='feedback-request__input' placeholder="Телефон" value='' pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </label>
+                <br>
+                <label for='user-email'>
+                    <input type='email' id='user-email' class='feedback-request__input' placeholder="Электронная почта" value='' required>
+                </label>
+                <br>
+                <label>
+                    <textarea class='feedback-request__input message-request__text' placeholder="Сообщение" name="request" cols="5" rows="5"></textarea>
+                </label>
+                <p class='feedback-request__agreement'>
+                    Нажимая “отправить”, вы даете <a href='#' class='feedback-request__link'>согласие на обработку персональных данных</a> и соглашаетесь с нашей <a href='#' class='feedback-request__link'>политикой конфиденциальности</a>
+                </p>
+                <button type='submit' class='button button-submit feedback-request__button feedback-request__button-message'>ОТПРАВИТЬ</button>
+            </form>
+        </section>
+    </aside>
+
+    <aside class='feedback-request feedback-request--call feedback-request--call--hidden'>
+        <header class='feedback-request__header'>
+            <button class='button feedback-request__button-close'></button>
+        </header>
+        <section class='feedback-request__body'>
+            <h2 class='feedback-request__title'>Обратная связь</h2>
+            <form action='#' method='post' class='feedback-request__form'>
+                <label for='callback-phone'>
+                    <input type='tel' id='callback-phone' class='feedback-request__input' placeholder="Телефон" value='' pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </label>
+                <p class='feedback-request__agreement'>
+                    Нажимая “отправить”, вы даете <a href='#' class='feedback-request__link'>согласие на обработку персональных данных</a> и соглашаетесь с нашей <a href='#' class='feedback-request__link'>политикой конфиденциальности</a>
+                </p>
+                <button type='submit' class='button button-submit feedback-request__button feedback-request__button-call'>ОТПРАВИТЬ</button>
+            </form>
+        </section>
+    </aside>
+
 </body>
 </html>
