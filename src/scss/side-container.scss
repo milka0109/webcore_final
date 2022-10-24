@@ -2,10 +2,8 @@
     margin-right: auto;
     width: 100vw;
     padding: 0 24px;
-}
 
-@media screen and (min-width: 768px) {
-    .side-container{
+    @media screen and (min-width: 768px) {
         width: 320px;
     }
 }

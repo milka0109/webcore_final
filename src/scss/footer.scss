@@ -1,5 +1,7 @@
+@import "variables";
+
 .footer {
-    background: #F2F2F2;
+    background: $color-bg;
     border-top: 2px solid #D9FFF5;
     display: flex;
     flex-direction: column;
@@ -13,31 +15,26 @@
     color: #7E7E82;
     opacity: 0.72;
     transition: transform 1s;
-}
 
-
-@media screen and (min-width: 768px) {
-    .footer{
+    @media screen and (min-width: 768px) {
         flex-direction: row;
-        gap: 0, 45%;
+        //gap: 0, 45%;
         justify-content: space-around;
         align-items: baseline;
         padding: 32px 24px;
     }
 
-    .footer__rights {
-       text-align: left; 
+    &__rights {
+        text-align: left;
     }
 
-    .footer__info {
+    &__info {
         max-width: 330px;
         text-align: right;
         float: right;
     }
-}
 
-@media screen and (min-width: 1440px) {
-    .footer{
+    @media screen and (min-width: 1440px) {
         width: 1120px;
         transform: translateX(320px);
     }

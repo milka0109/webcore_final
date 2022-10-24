@@ -1,9 +1,11 @@
+@import "variables";
+
 .text-link {
-    color: #1B1C21;
+    color: $color-black;
     text-decoration: none;
     transition: all 0.3s;
-}
 
-.text-link:hover {
-    opacity: 0.5;
+    &:hover {
+        opacity: 0.5;
+    }
 }

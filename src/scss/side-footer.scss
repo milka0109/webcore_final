@@ -1,61 +1,63 @@
+@import "variables";
+
 .side-footer {
     margin-top: auto;
     //margin-bottom: 32px;
     height: 220px;
-}
 
-.side-footer__item {
-    margin-right: 16px;
-}
+    &__item {
+        margin-right: 16px;
+    }
 
-/*ITEMS*/
+    /*ITEMS*/
 
-.side-footer__button-call {
-    background: #FF3E79 url("../img/call.png") center center no-repeat;
-}
+    &__button-call {
+        background: $color-pink url("../img/call.png") center center no-repeat;
+    }
 
-.side-footer__button-message {
-    background: #FF3E79 url("../img/message.png") center center no-repeat;
-}
+    &__button-message {
+        background: $color-pink url("../img/message.png") center center no-repeat;
+    }
 
-.side-footer__button-contacts {
-    background: #FF3E79 url("../img/contacts.png") center center no-repeat;
-}
+    &__button-contacts {
+        background: $color-pink url("../img/contacts.png") center center no-repeat;
+    }
 
-.side-footer__contacts {
-    margin-top: 16px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 12px;
-}
+    &__contacts {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+    }
 
-.footer__email {
-    display: block;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    letter-spacing: -0.2px;
-}
+    &__email {
+        display: block;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        letter-spacing: -0.2px;
+    }
 
-.footer__phone {
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 700;
-    letter-spacing: -0.6px;
-}
+    &__phone {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+        letter-spacing: -0.6px;
+    }
 
-.side-footer__lang {
-    margin-top: 40px;
-    display: flex;
-}
+    &__lang {
+        margin-top: 40px;
+        display: flex;
+    }
 
-.side-footer_ru,
-.side-footer__en,
-.side-footer__ch {
-    display: block;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    letter-spacing: -0.2px;
-    margin-right: 7px;
+    &_ru,
+    &__en,
+    &__ch {
+        display: block;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        letter-spacing: -0.2px;
+        margin-right: 7px;
+    }
 }
