@@ -8,11 +8,10 @@
     position: fixed;
     padding-top: 24px;
     padding-left: 16px;
-    background-color: $color-white;
+    background-color: $color-white; 
     top: 0;
     right: 0;
     z-index: 2;
-    //transition: all 1s;
 
     @media screen and (min-width: 1440px) {
         width: 440px;
