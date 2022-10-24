@@ -3,7 +3,7 @@
     max-width: 440px;
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     padding-top: 24px;
     padding-left: 16px;
     background-color: #FFFFFF;
@@ -109,23 +109,23 @@
 }
 
 .feedback-request--call--hidden {
-    transition: all 1s;
+    transition: 1s;
     transform: translateX(100%);
     display: none;
 }
 
 .feedback-request--call--visible {
-    transition: all 1s;
+    transition: 1s;
     transform: translateX(0);
 }
 
 .feedback-request--message--hidden {
-    transition: all 1s;
+    transition: 1s;
     transform: translateX(100%);
     display: none;
 }
 
 .feedback-request--message--visible {
-    transition: all 1s;
+    transition: 1s;
     transform: translateX(0);
 }
