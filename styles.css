@@ -1714,6 +1714,8 @@ ul {
     text-decoration: none;
     letter-spacing: -0.2px;
     color: #1B1C21; }
+    .price__link:hover {
+      color: #FF3E79; }
     .price__link::after {
       content: '';
       position: absolute;
